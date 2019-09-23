@@ -1,0 +1,19 @@
+@import '../globals';
+
+#section--page--main--content--photovoltaics--header {
+	background: url('photovoltaics-header-bg.jpg') center bottom no-repeat;
+	background-size: cover;
+	
+	.section__title {
+		@media #{$sm-min} {
+			> span:first-child > span:first-child:before {
+				content: '|';
+				margin-right: .5rem;
+			}
+		}
+	}
+}
+
+#section--page--main--content--photovoltaics--chart {
+	background: #EAEAEB !important;
+}

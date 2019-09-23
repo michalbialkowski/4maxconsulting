@@ -1,0 +1,67 @@
+@import '../globals';
+
+#section--page--main--content--project--header {
+	background: url('project-bg.jpg') center center no-repeat;
+	background-size: cover;
+	
+	.section__header {
+		@media #{$sm-min} {
+			> span:first-child > span:first-child:before {
+				content: '|';
+				margin-right: .5rem;
+			}
+		}
+		
+		> span.bg-warning {
+			background: none !important;
+			position: relative;
+			
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				width: 100vw;
+				height: 100%;
+				background: #E29300;
+				opacity: .5;
+				
+				
+				@media #{$md-max} {
+					left: calc(50% - 50vw);
+				}
+				
+				@media #{$lg-min} {
+					left: calc(100% + 15px - 50vw);
+				}
+			}
+			
+			> span {
+				position: relative;
+			}
+		}
+	}
+	
+	.element__square {
+		width: 320px !important;
+	}
+}
+
+#section--page--main--content--project--info {
+	background: #C3D0D9 !important;
+	
+	img.img__figure {
+		@media #{$lg-min} {
+			max-width: none !important;
+			position: absolute;
+			object-fit: cover;
+			object-position: center center;
+			left: 0;
+			top: 0;
+			width: calc(100% + 15px);
+			height: 100%;
+			z-index: 100;
+		}
+	}
+	
+}
+

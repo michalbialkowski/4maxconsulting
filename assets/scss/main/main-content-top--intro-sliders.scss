@@ -1,0 +1,16 @@
+@import '../globals';
+
+#section--page--main--top--intro--sliders {
+	.main__image {
+		width: 100%;
+		object-fit: cover;
+	}
+	
+	
+	.thumbnail__image {
+		@media #{$sm-max} {
+			width: calc((100% - 30px) / 3);
+		}
+	}
+}
+

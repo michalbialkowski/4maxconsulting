@@ -1,0 +1,20 @@
+@import '../globals';
+
+#section--page--main--content--eco--header {
+	background: url('eco-bg.jpg') center center no-repeat;
+	background-size: cover;
+	
+	@media #{$sm-min} {
+		.section__title {
+			> span:first-child:before {
+				content: '|';
+				margin-right: .5rem;
+			}
+		}
+	}
+	
+	.element__square {
+		width: 320px !important;
+	}
+}
+

@@ -1,0 +1,52 @@
+@import '../globals';
+
+$customPadding: 60px;
+
+#section--page--main--content--usage {
+	background: url('bg-usage.jpg') center left no-repeat;
+	background-size: cover;
+	
+	.container {
+		> div {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			@media #{$lg-min} {
+				padding-top: $customPadding;
+				padding-bottom: $customPadding;
+				
+			}
+		}
+	}
+	
+	.section__title {
+		@media #{$sm-min} {
+			> span:first-child {
+				-webkit-text-stroke: 1px rgba(255,255,255,.35);
+				mix-blend-mode: hard-light;
+				&:before {
+					content: '|';
+					margin-right: .5rem;
+				}
+			}
+		}
+	}
+	
+	.card {
+		background: rgba(255,255,255,.95) !important;
+		
+		@media #{$lg-min} {
+			margin-top: -$customPadding;
+			margin-bottom: -$customPadding;
+		
+			.card-body {
+				padding-top: $customPadding;
+				padding-bottom: $customPadding;
+			}
+		}
+		
+		* {
+			font-weight: 400;
+		}
+	}
+}
+
