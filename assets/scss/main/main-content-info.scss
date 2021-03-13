@@ -1,0 +1,57 @@
+@import '../globals';
+
+$customPadding: 60px;
+
+#section--page--main--content--info {
+	position: relative;
+	$bgWidth: 200px;
+	
+	@media #{$md-max} {
+		.container > .row > div:first-child {
+			position: relative;
+			
+			&:before {
+				position: absolute;
+				content: '';
+				left: calc(50% - 50vw);
+				top: 0;
+				width: 100vw;
+				height: 100%;
+				background: url('solar-farm-top.jpg') center center no-repeat;
+				}
+		}
+	}
+	
+	@media #{$lg-min} {
+		&:before {
+			position: absolute;
+			content: '';
+			left: calc(50% - 100px);
+			top: 0;
+			width: $bgWidth;
+			height: 100%;
+			background: url('solar-farm-top.jpg') center center no-repeat;
+			transform: skew(-30deg, 0);
+		}
+	}
+	
+	.block__image {
+		border-width: 5px;
+		background: none;
+		
+		figure {
+			border-width: 5px !important;
+			
+			.svg {
+				min-width: 100px;
+				min-height: 100px;
+				
+				* {
+					fill: white !important;
+				}
+			}
+		}
+			
+	}
+}
+

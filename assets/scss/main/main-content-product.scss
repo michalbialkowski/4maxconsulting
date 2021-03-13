@@ -1,0 +1,24 @@
+@import '../globals';
+
+#section--page--main--content--product--header {
+	background: url('product-bg.jpg') center bottom no-repeat;
+	background-size: cover;
+	
+	.section__title {
+		
+		@media #{$sm-min} {
+			> span:first-child > span:first-child:before {
+				content: '|';
+				margin-right: .5rem;
+			}
+		}
+	}
+}
+
+#section--page--main--content--product--info {
+	table .lead {
+		@media #{$sm-max} {
+			font-size: 1rem;
+		}
+	}
+}

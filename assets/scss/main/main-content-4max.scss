@@ -1,0 +1,14 @@
+@import '../globals';
+
+#section--page--main--content--4max {
+	.side__image {
+		min-height: 50vh;
+		
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
